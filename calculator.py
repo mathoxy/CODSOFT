@@ -88,7 +88,7 @@ class App(ctk.CTk):
           button_multi = ctk.CTkButton(self, width=btn_width, height=btn_height, corner_radius=7, bg_color=bg_color, hover_color=hover_color, font=self.my_font2, text="x",  fg_color=btn_color, command=lambda: self.button_click("x"))
           button_div = ctk.CTkButton(self, width=btn_width, height=btn_height, corner_radius=7, bg_color=bg_color, hover_color=hover_color, font=self.my_font2, text="/",  fg_color=btn_color, command=lambda: self.button_click("/"))
           button_equal = ctk.CTkButton(self, width=btn_width, height=btn_height*2.1, corner_radius=7, bg_color=bg_color, fg_color="#4071f2", font=self.my_font2, text="=", command=self.result)
-          button_delete = ctk.CTkButton(self, width=btn_width, height=btn_height, corner_radius=7, bg_color=bg_color, hover_color=hover_color, font=self.my_font2, text="<-",  fg_color=btn_color, command=self.delete)
+          button_delete = ctk.CTkButton(self, width=btn_width, height=btn_height, corner_radius=7, bg_color=bg_color, hover_color=hover_color, font=self.my_font2, text="←",  fg_color=btn_color, command=self.delete)
           button_clear = ctk.CTkButton(self, width=btn_width, height=btn_height, corner_radius=7, bg_color=bg_color, hover_color=hover_color, font=self.my_font2, text="Clear",  fg_color=btn_color, command=self.clear)
 
           # Placing
@@ -118,3 +118,4 @@ class App(ctk.CTk):
 
 if __name__ == "__main__":
     App(title="Calculator", size=(450, 600),bg_color="#5f4b5c", btn_color="#201e1f")
+    
