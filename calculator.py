@@ -18,9 +18,7 @@ class App(ctk.CTk):
           self.create_entry(size, bg_color)
           self.create_button(btn_color, bg_color, size)
 
-
-          # Main loop
-          self.mainloop()
+     # Command functions
      def button_click(self, btn):
           current_entry = entry.get()
           entry.delete(0, END)
@@ -33,9 +31,8 @@ class App(ctk.CTk):
      def result(self):
           try:
                equation = entry.get()
-               new_equation = equation.replace('x', '*')
-               print(new_equation)
-               result = eval(new_equation)
+               equation = equation.replace('x', '*')
+               result = eval(equation)
                entry.delete(0, END)
                entry.insert(0, result)
           except ZeroDivisionError:
@@ -118,5 +115,5 @@ class App(ctk.CTk):
           
 
 if __name__ == "__main__":
-    App(title="Calculator", size=(450, 600),bg_color="#5f4b5c", btn_color="#201e1f")
-    
+    app = App(title="Calculator", size=(450, 600),bg_color="#5f4b5c", btn_color="#201e1f")
+    app.mainloop()
