@@ -1,1 +1,1 @@
-def delete(self):
+self.config(bg=bg_color)

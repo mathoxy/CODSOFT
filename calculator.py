@@ -13,6 +13,7 @@ class App(ctk.CTk):
           self.geometry(f"{size[0]}x{size[1]}")
           self.minsize(width=size[0], height=size[1])
           self.config(bg=bg_color)
+          
           # Create Widgets
           self.create_entry(size, bg_color)
           self.create_button(btn_color, bg_color, size)
@@ -57,7 +58,7 @@ class App(ctk.CTk):
 
      def create_entry(self, size, bg_color):
           global entry
-          entry = ctk.CTkEntry(self, text_color="white", bg_color=bg_color, font=self.my_font1, width=size[0], height=90, corner_radius=10)
+          entry = ctk.CTkEntry(self, text_color="white", fg_color="#323334",bg_color=bg_color, font=self.my_font1, width=size[0], height=90, corner_radius=10)
           entry.grid(row=0, column=0, columnspan=4, sticky="nsew")
           entry.insert(0, "0")
 
