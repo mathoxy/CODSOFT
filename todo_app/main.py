@@ -20,10 +20,9 @@ def create_table():
     connection.commit()
     cursor.close()
     connection.close()
-# Constants
+# Text font
 my_font = ("Arial", 18)
 
-# Create App
 class App(ctk.CTk):
     def __init__(self, size):
         super().__init__()
