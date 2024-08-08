@@ -1,1 +1,0 @@
-self.config(bg=bg_color)
